@@ -4,8 +4,10 @@ public class ItemPickUp : MonoBehaviour
 {
     [SerializeField] public bool isDrill;
     [SerializeField] public bool isPick;
+    [SerializeField] 
+    private InventoryController inventoryController;
 
-    // Use OnTriggerEnter — works with CharacterController
+    // Use OnTriggerEnter ï¿½ works with CharacterController
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -18,6 +20,8 @@ public class ItemPickUp : MonoBehaviour
             else if (isPick)
             {
                 PlayerController.Instance.PickUpPick();
+                inventoryController.AddItem("pickaxe");
+                Debug.Log("Pick destory");
             }
             Destroy(gameObject);
         }

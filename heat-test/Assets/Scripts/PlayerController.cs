@@ -27,15 +27,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public GameObject furnace;
     [SerializeField] ProgressBarController progress;
 
-
-
-
     [Header("Misc")]
     [SerializeField] public bool hasDrill = false;
     [SerializeField] public GameObject drill;
     [SerializeField] public bool hasPick = false;
     [SerializeField] public GameObject pick;
-    [SerializeField] InventoryController inventoryController;
+    [SerializeField] private InventoryController inventoryController;
     private CharacterController controller;
     private Vector3 moveInput;
     private Vector3 velocity;
@@ -100,6 +97,9 @@ public class PlayerController : MonoBehaviour
     {
         hasPick = true;
         pick.SetActive(true);
+
+        inventoryController.AddItem("pickaxe");
+        Debug.Log("Pick is true");
     }
  public void ToggleInventory()
 {
