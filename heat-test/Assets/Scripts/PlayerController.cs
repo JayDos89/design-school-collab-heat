@@ -101,17 +101,18 @@ public class PlayerController : MonoBehaviour
         inventoryController.AddItem("pickaxe");
         Debug.Log("Pick is true");
     }
- public void ToggleInventory()
-{
-    inventoryOpen = !inventoryOpen;
 
-    inventory.SetActive(inventoryOpen);
-
-    if (inventoryOpen)
+    public void ToggleInventory()
     {
-        inventoryController.ShowInventory();
+        inventoryOpen = !inventoryOpen;
+
+        inventory.SetActive(inventoryOpen);
+
+        if (inventoryOpen)
+        {
+            inventoryController.ShowInventory();
+        }
     }
-}
 
     void Update()
     {

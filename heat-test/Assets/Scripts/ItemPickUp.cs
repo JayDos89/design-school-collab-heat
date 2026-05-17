@@ -20,7 +20,7 @@ public class ItemPickUp : MonoBehaviour
             else if (isPick)
             {
                 PlayerController.Instance.PickUpPick();
-                inventoryController.AddItem("pickaxe");
+                //inventoryController.AddItem("pickaxe");
                 Debug.Log("Pick destory");
             }
             Destroy(gameObject);
