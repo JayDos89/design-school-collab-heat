@@ -14,7 +14,7 @@ public class ItemPickUp : MonoBehaviour
             {
                 AudioController.Instance.PlaySound("drillPickup");
                 PlayerController.Instance.PickUpDrill();
-                Debug.Log("Drill destory");
+                Debug.Log("Drill destroy");
             }
             else if (isPick)
             {   AudioController.Instance.PlaySound("picPickup");

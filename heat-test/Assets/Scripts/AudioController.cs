@@ -58,7 +58,7 @@ public class AudioController : MonoBehaviour
                 sfxSource.PlayOneShot(oreMining);
                 break;
              case "depleteOre":
-                sfxSource.PlayOneShot(depleteOre);
+                sfxSource.PlayOneShot(depleteOre, 2f);
                 break;
             case "picPickup":
                 sfxSource.PlayOneShot(picPickup, 3f);

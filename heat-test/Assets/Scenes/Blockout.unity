@@ -16943,6 +16943,7 @@ MonoBehaviour:
   oreMining: {fileID: 8300000, guid: a10b270c9990eab47835c19165355343, type: 3}
   picPickup: {fileID: 8300000, guid: d46f8cc5908fc48438022d3f512a1bb3, type: 3}
   drillPickup: {fileID: 8300000, guid: bd94faa9b7489f14ca6d6bd9179c0458, type: 3}
+  depleteOre: {fileID: 8300000, guid: 3513e7cb9f8dee14d876a86e23baf2aa, type: 3}
 --- !u!4 &1871460673 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1626637188098780145, guid: cac7e28f0d0e189449aabf1d16fc815a, type: 3}
@@ -18683,7 +18684,7 @@ Transform:
   m_GameObject: {fileID: 2060267079}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: 2}
+  m_LocalPosition: {x: 1.26, y: 0, z: -0.61}
   m_LocalScale: {x: 23, y: 8, z: 23}
   m_ConstrainProportionsScale: 0
   m_Children: []

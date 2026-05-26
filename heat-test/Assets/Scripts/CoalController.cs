@@ -22,6 +22,7 @@ public class CoalController : MonoBehaviour
     {
         if(totalCoal <= 0)
         {
+            AudioController.Instance.PlaySound("depleteOre");
             Debug.Log("0 Coal Left");
             Destroy(gameObject);
         }
