@@ -12123,13 +12123,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325360079}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 4.18, y: 0, z: 17.36}
-  m_LocalScale: {x: 25, y: 6, z: 1}
+  m_LocalRotation: {x: 0, y: 0.30070576, z: 0, w: 0.953717}
+  m_LocalPosition: {x: 60, y: 0, z: 73.3}
+  m_LocalScale: {x: 200, y: 6, z: 150}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1864704809}
-  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 35, z: 0}
 --- !u!65 &1325360081
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16936,12 +16936,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioController
   sfxSource: {fileID: 1864704810}
   ambienceSource: {fileID: 1864704810}
-  furnaceRoom: {fileID: 8300000, guid: 85fdffed1362a1d4f98d44f3f8916803, type: 3}
-  cavernsArea: {fileID: 8300000, guid: 4d0d8469de2543c4ca224207694f6afb, type: 3}
+  furnaceRoom: {fileID: 8300000, guid: 1a4aba0d8c547354a9dfba222d025cf5, type: 3}
+  cavernsArea: {fileID: 8300000, guid: 75b6a3af9cc8e6c4fb34cf3a49dfa860, type: 3}
   furnaceEnter: {fileID: 8300000, guid: af88029dd2a322441934b2fb6ffd5699, type: 3}
   playerJump: {fileID: 8300000, guid: aaeaa4ae9f0d66c4d8bf8b7dadea8233, type: 3}
   oreMining: {fileID: 8300000, guid: a10b270c9990eab47835c19165355343, type: 3}
-  picPickup: {fileID: 8300000, guid: 4c54c9628897ed84589953d65755b028, type: 3}
+  picPickup: {fileID: 8300000, guid: d46f8cc5908fc48438022d3f512a1bb3, type: 3}
+  drillPickup: {fileID: 8300000, guid: bd94faa9b7489f14ca6d6bd9179c0458, type: 3}
 --- !u!4 &1871460673 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1626637188098780145, guid: cac7e28f0d0e189449aabf1d16fc815a, type: 3}

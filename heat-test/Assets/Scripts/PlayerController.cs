@@ -130,10 +130,8 @@ public class PlayerController : MonoBehaviour
             progress.Decrease(Time.deltaTime * moveHeatMod);
         }
 
-        updateLight();
-        
+        updateLight();       
     }
-
 
     public void OnTriggerEnter(Collider other)
     {
@@ -157,7 +155,6 @@ public class PlayerController : MonoBehaviour
             saltController.totalSalt -= saltIncrement;
         }
 
-
         //Deposit coal in furnace, refill heat meter and upgrade meter max by how much coal is deposited
         if (other.gameObject.CompareTag("Furnace"))
         {
@@ -170,31 +167,36 @@ public class PlayerController : MonoBehaviour
                 progress.ResetBar();
                 coalNum = 0f;
             }
-
         }
 
         // Furnace room box collider, turn on room ambience
         if (other.gameObject.CompareTag("FurnaceRoom"))
         {
+            AudioController.Instance.StopSound("cavernArea");
             AudioController.Instance.PlaySound("furnaceRoom");
             Debug.Log("Furnace room collider works");
         }
         // Caverns Area box collider for ambience on
-        if (other.gameObject.CompareTag("CavernsArea"))
-        {
+        else if (other.gameObject.CompareTag("CavernsArea"))
+        {   
+            AudioController.Instance.StopSound("furnaceRoom");
             AudioController.Instance.PlaySound("cavernsArea");
             Debug.Log("Caverns room collider works");
-        }
-        
+        }  
     }
 
      public void OnTriggerExit(Collider other)
     {
         // Leave Furnace room 
-        if (other.gameObject.CompareTag("FurnaceRoom"))
-        {
-            AudioController.Instance.StopSound("furnaceRoom");
-        }
+        // if (other.gameObject.CompareTag("FurnaceRoom"))
+        // {
+        //     AudioController.Instance.StopSound("furnaceRoom");
+        // }
+
+        // if (other.gameObject.CompareTag("CavernArea"))
+        // {
+        //     AudioController.Instance.StopSound("cavernArea");
+        // }
     }
 
     void updateLight()

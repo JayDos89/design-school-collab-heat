@@ -12,7 +12,7 @@ public class ItemPickUp : MonoBehaviour
         {
             if (isDrill)
             {
-                AudioController.Instance.PlaySound("picPickup");
+                AudioController.Instance.PlaySound("drillPickup");
                 PlayerController.Instance.PickUpDrill();
                 Debug.Log("Drill destory");
             }

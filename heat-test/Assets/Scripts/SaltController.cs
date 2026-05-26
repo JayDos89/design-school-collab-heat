@@ -21,7 +21,8 @@ public class SaltController : MonoBehaviour
     void Update()
     {
         if (totalSalt <= 0)
-        {
+        {   
+            AudioController.Instance.PlaySound("depleteOre");
             Debug.Log("0 Salt Left");
             Destroy(gameObject);
         }
