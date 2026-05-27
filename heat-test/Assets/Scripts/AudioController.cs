@@ -11,9 +11,9 @@ public class AudioController : MonoBehaviour
     // Ambience
     [SerializeField] private AudioClip furnaceRoom;
     [SerializeField] private AudioClip cavernsArea;
+    
     // Sound Effects
-
-    [SerializeField] private AudioClip unequipItem;
+    [SerializeField] private AudioClip unequippedItem;
     [SerializeField] private AudioClip furnaceEnter;
     [SerializeField] private AudioClip playerJump;
     [SerializeField] private AudioClip oreMining;
@@ -42,6 +42,7 @@ public class AudioController : MonoBehaviour
                 {
                     ambienceSource.clip = furnaceRoom;
                     ambienceSource.loop = true;
+                    ambienceSource.volume = 2f;
                     ambienceSource.Play();
                 }
                 break;
@@ -75,8 +76,8 @@ public class AudioController : MonoBehaviour
             case "drillPickup":
                 sfxSource.PlayOneShot(drillPickup);
                 break;
-            case "unequiptItem":
-                sfxSource.PlayOneShot(unequipItem);
+            case "unequippedItem":
+                sfxSource.PlayOneShot(unequippedItem);
                 break;
             case "skillUpgrade":
                 sfxSource.PlayOneShot(skillUpgrade);

@@ -16945,8 +16945,8 @@ MonoBehaviour:
   picPickup: {fileID: 8300000, guid: 4c54c9628897ed84589953d65755b028, type: 3}
   drillPickup: {fileID: 8300000, guid: 4c54c9628897ed84589953d65755b028, type: 3}
   depleteOre: {fileID: 8300000, guid: 3513e7cb9f8dee14d876a86e23baf2aa, type: 3}
-  openToolWheel: {fileID: 8300000, guid: c98177b4827cd024cb6e9a3ee74a7381, type: 3}
-  closeToolWheel: {fileID: 8300000, guid: c98177b4827cd024cb6e9a3ee74a7381, type: 3}
+  openToolWheel: {fileID: 8300000, guid: 85e3fed2fde0d3e4f8e2bdbea0e82a99, type: 3}
+  closeToolWheel: {fileID: 8300000, guid: f7c03dfccea8892429dd826211554e05, type: 3}
   skillUpgrade: {fileID: 8300000, guid: 41d8b49cdccd29541b64bcdddd207f6d, type: 3}
   skillTreeOpen: {fileID: 8300000, guid: 509cb8bcc05480e45a4d68d7a78888e0, type: 3}
   skillTreeClose: {fileID: 8300000, guid: d70111e72fd41c742bd8c8856e0d912a, type: 3}
