@@ -21,14 +21,10 @@ public class AudioController : MonoBehaviour
     [SerializeField] private AudioClip drillPickup;
     [SerializeField] private AudioClip depleteOre;
     [SerializeField] private AudioClip openToolWheel;
-    [SerializeField] private AudioClip closeToolWheel;
-    
+    [SerializeField] private AudioClip closeToolWheel;  
     [SerializeField] private AudioClip skillUpgrade;
-    
     [SerializeField] private AudioClip skillTreeOpen;
-    
     [SerializeField] private AudioClip skillTreeClose;
-
     [SerializeField] private AudioClip uiButton;
     
     void Awake()

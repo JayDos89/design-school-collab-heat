@@ -16947,6 +16947,10 @@ MonoBehaviour:
   depleteOre: {fileID: 8300000, guid: 3513e7cb9f8dee14d876a86e23baf2aa, type: 3}
   openToolWheel: {fileID: 8300000, guid: c98177b4827cd024cb6e9a3ee74a7381, type: 3}
   closeToolWheel: {fileID: 8300000, guid: c98177b4827cd024cb6e9a3ee74a7381, type: 3}
+  skillUpgrade: {fileID: 8300000, guid: 41d8b49cdccd29541b64bcdddd207f6d, type: 3}
+  skillTreeOpen: {fileID: 8300000, guid: 509cb8bcc05480e45a4d68d7a78888e0, type: 3}
+  skillTreeClose: {fileID: 8300000, guid: d70111e72fd41c742bd8c8856e0d912a, type: 3}
+  uiButton: {fileID: 8300000, guid: 02940250facfa3b44bd80011b913c5a2, type: 3}
 --- !u!4 &1871460673 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1626637188098780145, guid: cac7e28f0d0e189449aabf1d16fc815a, type: 3}
