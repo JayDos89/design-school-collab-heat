@@ -16938,12 +16938,15 @@ MonoBehaviour:
   ambienceSource: {fileID: 1864704810}
   furnaceRoom: {fileID: 8300000, guid: 1a4aba0d8c547354a9dfba222d025cf5, type: 3}
   cavernsArea: {fileID: 8300000, guid: 75b6a3af9cc8e6c4fb34cf3a49dfa860, type: 3}
+  unequipItem: {fileID: 8300000, guid: 1c0d226782296e4479cb7aa70086bfa7, type: 3}
   furnaceEnter: {fileID: 8300000, guid: af88029dd2a322441934b2fb6ffd5699, type: 3}
   playerJump: {fileID: 8300000, guid: aaeaa4ae9f0d66c4d8bf8b7dadea8233, type: 3}
   oreMining: {fileID: 8300000, guid: a10b270c9990eab47835c19165355343, type: 3}
-  picPickup: {fileID: 8300000, guid: d46f8cc5908fc48438022d3f512a1bb3, type: 3}
-  drillPickup: {fileID: 8300000, guid: bd94faa9b7489f14ca6d6bd9179c0458, type: 3}
+  picPickup: {fileID: 8300000, guid: 4c54c9628897ed84589953d65755b028, type: 3}
+  drillPickup: {fileID: 8300000, guid: 4c54c9628897ed84589953d65755b028, type: 3}
   depleteOre: {fileID: 8300000, guid: 3513e7cb9f8dee14d876a86e23baf2aa, type: 3}
+  openToolWheel: {fileID: 8300000, guid: c98177b4827cd024cb6e9a3ee74a7381, type: 3}
+  closeToolWheel: {fileID: 8300000, guid: c98177b4827cd024cb6e9a3ee74a7381, type: 3}
 --- !u!4 &1871460673 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1626637188098780145, guid: cac7e28f0d0e189449aabf1d16fc815a, type: 3}

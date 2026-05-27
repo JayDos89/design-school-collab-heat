@@ -2,7 +2,8 @@ using System;
 using UnityEngine;
 
 public class AudioController : MonoBehaviour
-{
+{   
+    // Controllers
     public static AudioController Instance;
     [SerializeField] private AudioSource sfxSource;
     [SerializeField] private AudioSource ambienceSource;
@@ -11,6 +12,8 @@ public class AudioController : MonoBehaviour
     [SerializeField] private AudioClip furnaceRoom;
     [SerializeField] private AudioClip cavernsArea;
     // Sound Effects
+
+    [SerializeField] private AudioClip unequipItem;
     [SerializeField] private AudioClip furnaceEnter;
     [SerializeField] private AudioClip playerJump;
     [SerializeField] private AudioClip oreMining;
@@ -19,6 +22,14 @@ public class AudioController : MonoBehaviour
     [SerializeField] private AudioClip depleteOre;
     [SerializeField] private AudioClip openToolWheel;
     [SerializeField] private AudioClip closeToolWheel;
+    
+    [SerializeField] private AudioClip skillUpgrade;
+    
+    [SerializeField] private AudioClip skillTreeOpen;
+    
+    [SerializeField] private AudioClip skillTreeClose;
+
+    [SerializeField] private AudioClip uiButton;
     
     void Awake()
     {
@@ -67,6 +78,21 @@ public class AudioController : MonoBehaviour
                 break;
             case "drillPickup":
                 sfxSource.PlayOneShot(drillPickup);
+                break;
+            case "unequiptItem":
+                sfxSource.PlayOneShot(unequipItem);
+                break;
+            case "skillUpgrade":
+                sfxSource.PlayOneShot(skillUpgrade);
+                break;
+            case "skillTreeOpen":
+                sfxSource.PlayOneShot(skillTreeOpen);
+                break;
+            case "skillTreeClose":
+                sfxSource.PlayOneShot(skillTreeClose);
+                break;
+            case "uiButton":
+                sfxSource.PlayOneShot(uiButton);
                 break;
 
             default:
