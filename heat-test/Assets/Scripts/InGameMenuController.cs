@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -6,7 +7,7 @@ using UnityEngine.UI;
 
 public class InGameMenuController : MonoBehaviour
 {
-    public GameObject MenuCanvas; 
+    public GameObject IGMenuCanvas; 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,20 +17,19 @@ public class InGameMenuController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {      
-        int toggle = 0;
-        
-        if (Keyboard.current.oKey.wasPressedThisFrame && toggle == 0)
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
         { 
-            Debug.Log("escape key worked");
-            MenuCanvas.SetActive(true);
-            
+            ToggleSwitch();
+            IGMenuCanvas.SetActive(toggle);
         }
-        if (Keyboard.current.oKey.wasPressedThisFrame && toggle == 0)
-        { 
-            Debug.Log("escape key worked");
-            MenuCanvas.SetActive(false);
-            
-        }
-       
     }
+
+    bool toggle = false;
+    public void ToggleSwitch()
+    {
+        toggle = !toggle;
+        Debug.Log(toggle);
+    }
+
 }
+

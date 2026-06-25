@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
+    public GameObject MenuCanvas;
     //0 = test scene 1 = main menu scene
 
 
@@ -47,7 +48,12 @@ public class SceneController : MonoBehaviour
     public void QuitGame()
     {
         Debug.Log("Quit Game");
-
         Application.Quit();
+    }
+
+    public void ReturnToGame()
+    {
+        Debug.Log("Return works");
+        MenuCanvas.SetActive(false);
     }
 }
