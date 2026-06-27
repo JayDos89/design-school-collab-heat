@@ -240,7 +240,7 @@ public class PlayerController : MonoBehaviour
         {
             //AudioController.Instance.PlaySound("bomberEnter");
             other.transform.position += new Vector3(0, 3, 0);
-            Debug.Log("Bomber room collider works");
+            Debug.Log("Bomber collider works");
         }
 
         //Pick up coal
