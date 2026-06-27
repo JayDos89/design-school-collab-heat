@@ -11,6 +11,7 @@ TagManager:
   - CavernsArea
   - Water
   - DamageWarning
+  - Bomber
   layers:
   - Default
   - TransparentFX

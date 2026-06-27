@@ -30,7 +30,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] ProgressBarController progress;
 
     [SerializeField] public GameObject minePrompt;
-
+    [SerializeField] public GameObject bomber;
+    public int bomberPos = 0;
 
     [Header("Misc")]
     [SerializeField] public bool hasDrill = false;
@@ -114,15 +115,28 @@ public class PlayerController : MonoBehaviour
 
         //Coal
         if (currentInteractable.CompareTag("Coal") && hasPick && isInRange)
-        {
+        {   
+            int randomInt = Random.Range(0, 2);
+            int dustBuildup = 0;
+            
             AudioController.Instance.PlaySound("oreMining");
             coalNum += coalIncrement;
+            if (randomInt == 0)
+            {
+                dustBuildup += 1;
+            }
             CoalController coalController = currentInteractable.GetComponent<CoalController>();
             coalController.totalCoal -= coalIncrement;
 
             if (coalController.totalCoal <= 0)
-            {
+            {   
                 minePrompt.SetActive(false);
+
+                if (dustBuildup > 1)
+                {
+                    AudioController.Instance.PlaySound("dustBuildup");
+                    CreateDustCloud();
+                }
             }
         }
 
@@ -221,7 +235,14 @@ public class PlayerController : MonoBehaviour
 
 
     public void OnTriggerEnter(Collider other)
-    {
+    {   
+         if (other.gameObject.CompareTag("Bomber"))
+        {
+            //AudioController.Instance.PlaySound("bomberEnter");
+            other.transform.position += new Vector3(0, 3, 0);
+            Debug.Log("Bomber room collider works");
+        }
+
         //Pick up coal
         if (other.gameObject.CompareTag("Coal") && hasPick == true)
         {
@@ -286,6 +307,11 @@ public class PlayerController : MonoBehaviour
             isInRange = false;
 
         }
+    }
+
+    void CreateDustCloud()
+    {
+        Instantiate(bomber, transform.position, transform.rotation);
     }
 
     void Die()
