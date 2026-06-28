@@ -21,3 +21,6 @@ alot, so I can LEARN the skills that I could not manage to teach myself. So
 here is an example of how I use Ai.
 
 https://otagopoly-my.sharepoint.com/:w:/g/personal/everjr1_student_op_ac_nz/IQDRHGODcZGHQrxF-tefJQswAWHZdgz8eOCAX8plocgyVqQ?e=N4toLz
+
+Im always happy to answer any questions relating to this topic.
+Thanks
