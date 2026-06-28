@@ -39,6 +39,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public GameObject pick;
     [SerializeField] public GameObject redWarning;
     [SerializeField] public Light flame;
+
+    public GameObject MenuCanvas;
     bool isInRange = false;
 
     private Collider currentInteractable;
@@ -87,6 +89,11 @@ public class PlayerController : MonoBehaviour
         moveInput = context.ReadValue<Vector2>();
         //Debug.Log($"Move input: {moveInput}");
     }
+
+    /*public void OnIgMenu(InputAction.CallbackContext context)
+    {
+        Debug.Log("OOO keyt pressed");
+    }*/
 
     public void OnJump(InputAction.CallbackContext context)
     {
@@ -168,7 +175,13 @@ public class PlayerController : MonoBehaviour
     }
 
     void Update()
-    {
+    {   
+        /*if (Keyboard.current.oKey.wasPressedThisFrame)
+        {
+            Debug.Log("escape key worked");
+            MenuCanvas.SetActive(true);
+        }*/
+
         // Camera-relative movement
         Vector3 camForward = Camera.main.transform.forward;
         Vector3 camRight = Camera.main.transform.right;
